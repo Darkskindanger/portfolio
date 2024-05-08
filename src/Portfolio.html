@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../src/input2.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="">
+    <div id="content" class=" h-[840px] bg-[url('../images/pexels-mitchel3uo-3685210.jpg')] bg-no-repeat bg-cover bg-center">
+    <nav class="flex text-gray-300 relative">
+      <div  id="sideBar" class="bg-gray-300 absolute top-0 left-0 w-10/12 h-screen hidden">
+        <button id="menuClose" onclick="close" class="absolute top-7 left-5">
+          <img src="../images/icon-close.svg" alt="Close Menu" ></button>
+        <ul class="nav-btns inline-flex flex-col gap-10 text-black font-semibold mt-20 ml-10 hover:cursor-pointer">
+          <li class="active:underline"><a href="#">Home</a></li>
+          <li class="active:underline"><a href="#">About</a></li>
+          <li class="active:underline"><a href="#">Projects</a></li>
+          <li class="active:underline"><a href="#">Contact</a></li>
+        </ul>
+        <p class="text-black mt-7 ml-5"> &copy;2024 Created by Kilian Tavares</p>
+      </div>
+      <div class="flex items-center ml-3 gap-3 mt-5">
+        <button id="menuBtn" onclick="open">
+          <img src="../images/menu-regular-48 (1).png" alt="menu-btn"  class="w-8"></button>
+          <h1 class="text-3xl">Welcome.</h1> 
+     </div>
+    </nav>
+
+    <article id="art-1" class="h-[740px] flex flex-col justify-center">
+      <h2 class="text-gray-300 text-4xl text-center">Kilian Tavares</h2>
+      <p class="text-gray-300 text-2xl text-center w-10/12 mx-auto">Software Engineer, Web Developer & UI designer</p>
+  
+    </article>
+</div>
+    <script src="./js/portfolio.js"></script>
+  </body>
+</html>
