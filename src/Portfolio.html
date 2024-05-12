@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/output.css" />
     <link rel="stylesheet" href="../src/input2.css" />
+   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <title>Portfolio</title>
   </head>
   <body class="">
-    <div id="content" class=" h-[840px] bg-[url('../images/pexels-mitchel3uo-3685210.jpg')] bg-no-repeat bg-cover bg-center">
+    <div id="introductory-Content" class=" h-[840px] bg-[url('../images/pexels-mitchel3uo-3685210.jpg')] bg-no-repeat bg-cover bg-center">
     <nav class="flex text-gray-300 relative">
-      <div  id="sideBar" class="bg-gray-300 absolute top-0 left-0 w-10/12 h-screen hidden">
+      <div  id="sideBar" class="duration-75 bg-gray-300 absolute top-0 left-0 h-screen w-0">
         <button id="menuClose" onclick="close" class="absolute top-7 left-5">
           <img src="../images/icon-close.svg" alt="Close Menu" ></button>
-        <ul class="nav-btns inline-flex flex-col gap-10 text-black font-semibold mt-20 ml-10 hover:cursor-pointer">
+        <ul id="nav-links" class="hidden nav-btns flex-col gap-10 text-black font-semibold mt-20 ml-10 hover:cursor-pointer">
           <li class="active:underline"><a href="#">Home</a></li>
           <li class="active:underline"><a href="#">About</a></li>
           <li class="active:underline"><a href="#">Projects</a></li>
           <li class="active:underline"><a href="#">Contact</a></li>
         </ul>
-        <p class="text-black mt-7 ml-5"> &copy;2024 Created by Kilian Tavares</p>
+        <p id="nav-footer" class="text-black mt-7 ml-5 hidden"> &copy;2024 Created by Kilian Tavares</p>
       </div>
       <div class="flex items-center ml-3 gap-3 mt-5">
         <button id="menuBtn" onclick="open">
@@ -27,13 +28,66 @@
           <h1 class="text-3xl">Welcome.</h1> 
      </div>
     </nav>
-
-    <article id="art-1" class="h-[740px] flex flex-col justify-center">
+    <article id="art-1" class="h-[740px] relative flex flex-col justify-center">
       <h2 class="text-gray-300 text-4xl text-center">Kilian Tavares</h2>
-      <p class="text-gray-300 text-2xl text-center w-10/12 mx-auto">Software Engineer, Web Developer & UI designer</p>
+      <p class="text-gray-300 text-2xl text-center w-10/12 mx-auto ">Software Engineer, Web Developer & UI designer</p>
   
+      <a href="" id="art1-btn" class="absolute bottom-20 self-center"><dotlottie-player src="https://lottie.host/97d013c2-ee53-4c3e-b4a6-b0d7d6452c88/zje5sTsDCt.json" background="transparent" speed="1" style="width: 55px; height: 55px;" loop autoplay></dotlottie-player></a>
     </article>
-</div>
+   </div>
+   
+   <article id='art-2' class="flex flex-col items-center gap-5 bg-zinc-950 pt-5 shadow-[0px_-95px_20px_100px_#00000024]">
+    <h2 class="text-white text-5xl font-semibold text-center mb-5">My Expertise</h2>
+    
+    <div class="border-2 border-white w-72">
+      <div class="inline-flex items-center justify-around w-full">
+      <img src="../images/desktop-svgrepo-com.svg" alt="">
+      <h5 class="text-3xl font-semibold text-white w-min">Web Development</h5>
+    </div>
+    <div class="before:content-['<p>'] before:text-white text-lg font-semibold"></div>
+    <div class="flex h-[100px] p-2">
+        <div class="bg-white w-0.5 mr-2"></div>
+    <p class="text-white font-semibold">Deep love for deploying web apps and websites for 50+ clients worldwide.</p>
+  </div>    <div class="after:content-['<p>'] after:text-white text-lg font-semibold mb-1"></div>
+  </div>
+    <div class="border-2 border-white w-72">
+      <div class="inline-flex items-center justify-around w-full">
+      <img src="../images/react-svgrepo-com.svg" alt="">
+      <h5 class="text-3xl font-semibold text-white w-min">Software Engineering</h5>
+    </div>
+    <div class="before:content-['<p>'] before:text-white text-lg font-semibold"></div>
+    <div class="flex h-[100px] p-2">
+        <div class="bg-white w-0.5 mr-2"></div>
+    <p class="text-white font-semibold">Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</p>
+  </div>    <div class="after:content-['<p>'] after:text-white text-lg font-semibold mb-1"></div>
+  </div>
+    <div class="border-2 border-white w-72">
+      <div class="inline-flex items-center justify-around w-full">
+      <img src="../images/teamwork-work-svgrepo-com.svg" alt="">
+      <h5 class="text-3xl font-semibold text-white w-min">Team Management</h5>
+    </div>
+    <div class="before:content-['<p>'] before:text-white text-lg font-semibold"></div>
+    <div class="flex h-[100px] p-2">
+        <div class="bg-white w-0.5 mr-2"></div>
+    <p class="text-white font-semibold">Extensive experience in project/team leadership, ensuring punctual project completion</p>
+  </div>    <div class="after:content-['<p>'] after:text-white text-lg font-semibold mb-1"></div>
+  </div>
+</article>
+
+  <article id="projects" class="bg-zinc-950 text-white flex flex-col px-5 pt-10 gap-4">
+    <h2 class="text-6xl font-bold w-min">My Work</h2>
+    <p class="font-bold">Deployed scalable logistics, cloud service and defence based (ADF) software using React, C# and C.
+      Collaborated in 140+ projects with 50+ clients all around the world. Bringing diverse array of skills/services to vast amount of industries.
+    </p>
+
+<a href="#" class="font-semibold bg-purple-600 p-3 w-44 rounded text-center">View Projects</a>
+<ul class="flex flex-col text-xl font-semibold text-gray-400">
+<li>Filter by</li>
+<li><span class="type text-purple-600">/ All</span></li>
+<li><span class="type">/ Apps</span></li>
+<li><span class="type">/ Web</span></li>
+</ul> 
+</article>
     <script src="./js/portfolio.js"></script>
   </body>
 </html>
