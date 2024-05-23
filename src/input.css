@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.expBlock {
+    height: 430px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.hid {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hid2 {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateY(-10%);
+}
+.hid3 {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.showDelay:nth-child(2) {
+    transition-delay: 200ms;
+}
+.showDelay:nth-child(3) {
+    transition-delay: 400ms;
+}
+.showDelay:nth-child(4) {
+    transition-delay: 600ms;
+}
+.showDelay2:nth-child(2) {
+    transition-delay: 200ms;
+}
+.showDelay2:nth-child(3) {
+    transition-delay: 400ms;
+}
+.showDelay2:nth-child(4) {
+    transition-delay: 600ms;
+}

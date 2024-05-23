@@ -1,39 +1,725 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/output.css" />
-    <link rel="stylesheet" href="../src/input2.css" />
-    <title>Portfolio</title>
-  </head>
-  <body class="">
-    <div id="content" class=" h-[840px] bg-[url('../images/pexels-mitchel3uo-3685210.jpg')] bg-no-repeat bg-cover bg-center">
-    <nav class="flex text-gray-300 relative">
-      <div  id="sideBar" class="bg-gray-300 absolute top-0 left-0 w-10/12 h-screen hidden">
-        <button id="menuClose" onclick="close" class="absolute top-7 left-5">
-          <img src="../images/icon-close.svg" alt="Close Menu" ></button>
-        <ul class="nav-btns inline-flex flex-col gap-10 text-black font-semibold mt-20 ml-10 hover:cursor-pointer">
-          <li class="active:underline"><a href="#">Home</a></li>
-          <li class="active:underline"><a href="#">About</a></li>
-          <li class="active:underline"><a href="#">Projects</a></li>
-          <li class="active:underline"><a href="#">Contact</a></li>
-        </ul>
-        <p class="text-black mt-7 ml-5"> &copy;2024 Created by Kilian Tavares</p>
-      </div>
-      <div class="flex items-center ml-3 gap-3 mt-5">
-        <button id="menuBtn" onclick="open">
-          <img src="../images/menu-regular-48 (1).png" alt="menu-btn"  class="w-8"></button>
-          <h1 class="text-3xl">Welcome.</h1> 
-     </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/output.css" />
+        <link rel="stylesheet" href="../src/input2.css" />
+        <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Portfolio</title>
+    </head>
+    <body class="">
+        <div
+            id="introductory-Content"
+            class="h-screen bg-[url('../images/raghav-verma-VISZBcAB6U8-unsplash.jpg')] bg-cover bg-right bg-no-repeat"
+        >
+            <nav
+                class="relative flex text-gray-300 min-[630px]:flex-row-reverse"
+            >
+                <ul
+                    id="nav-links2"
+                    class="nav-btns2 hid2 mx-auto mt-5 flex flex-row gap-10 text-clampS font-semibold text-white hover:cursor-pointer max-[630px]:hidden"
+                >
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['01'] hover:underline active:underline"
+                    >
+                        <a href="#">// Home</a>
+                    </li>
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['02'] hover:underline active:underline"
+                    >
+                        <a href="#">// About</a>
+                    </li>
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['03'] hover:underline active:underline"
+                    >
+                        <a href="#">// Projects</a>
+                    </li>
+                    <li
+                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['04'] hover:underline active:underline"
+                    >
+                        <a href="#">// Contact</a>
+                    </li>
+                </ul>
+                <div
+                    id="sideBar"
+                    class="absolute left-0 top-0 h-screen w-0 bg-gray-300 duration-75"
+                >
+                    <button
+                        id="menuClose"
+                        onclick="closeNav"
+                        class="absolute left-5 top-7"
+                    >
+                        <img src="../images/icon-close.svg" alt="Close Menu" />
+                    </button>
+                    <ul
+                        id="nav-links"
+                        class="nav-btns ml-10 mt-20 hidden flex-col gap-10 font-semibold text-black hover:cursor-pointer"
+                    >
+                        <li class="active:underline"><a href="#">Home</a></li>
+                        <li class="active:underline"><a href="#">About</a></li>
+                        <li class="active:underline">
+                            <a href="#">Projects</a>
+                        </li>
+                        <li class="active:underline">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <p id="nav-footer" class="ml-5 mt-7 hidden text-black">
+                        &copy;2024 Created by Kilian Tavares
+                    </p>
+                </div>
+                <div class="ml-3 mt-5 flex items-center gap-1">
+                    <button id="menuBtn" onclick="openNav">
+                        <img
+                            src="../images/menu-regular-48 (1).png"
+                            alt="menu-btn"
+                            class="w-8 min-[630px]:hidden"
+                        />
+                    </button>
+                    <dotlottie-player
+                        src="https://lottie.host/470dea85-d506-49ca-bdbe-7c5a399ac917/wAtlQV5bKP.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 35px; height: 35px"
+                        loop
+                        autoplay
+                        class=""
+                    ></dotlottie-player>
+                </div>
+            </nav>
+            <article
+                id="art-1"
+                class="relative flex h-[740px] flex-col justify-center gap-10"
+            >
+                <h2
+                    class="text-center text-clamp3XL font-semibold text-gray-300"
+                >
+                    Kilian Tavares
+                </h2>
+                <p
+                    class="mx-auto w-10/12 text-center text-clamp font-semibold text-gray-300"
+                >
+                    Software Engineer, Web Developer & UI designer
+                </p>
 
-    <article id="art-1" class="h-[740px] flex flex-col justify-center">
-      <h2 class="text-gray-300 text-4xl text-center">Kilian Tavares</h2>
-      <p class="text-gray-300 text-2xl text-center w-10/12 mx-auto">Software Engineer, Web Developer & UI designer</p>
-  
-    </article>
-</div>
-    <script src="./js/portfolio.js"></script>
-  </body>
+                <a href="" id="art1-btn" class="self-center"
+                    ><dotlottie-player
+                        src="https://lottie.host/97d013c2-ee53-4c3e-b4a6-b0d7d6452c88/zje5sTsDCt.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 55px; height: 55px"
+                        loop
+                        autoplay
+                    ></dotlottie-player
+                ></a>
+            </article>
+        </div>
+
+        <article
+            id="art-2"
+            class="flex flex-col items-center gap-5 bg-zinc-950 pt-5 shadow-[0px_-95px_20px_100px_#00000024]"
+        >
+            <h2 class="mb-5 text-center text-5xl font-semibold text-white">
+                My Expertise
+            </h2>
+            <section class="hid flex flex-wrap justify-center">
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="../images/desktop-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="w-min text-3xl font-semibold text-white">
+                            Web Development
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[100px] p-2">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p class="font-semibold text-white">
+                            Deep love for deploying web apps and websites for
+                            50+ clients worldwide.
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="../images/react-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="w-min text-3xl font-semibold text-white">
+                            Software Engineering
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[100px] p-2">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p class="font-semibold text-white">
+                            Experienced in both functional and OOP: Dart,
+                            Python, Java, JavaScript, TypeScript.
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+                <div class="showDelay w-72 border-2 border-white p-7">
+                    <div class="inline-flex w-full items-center justify-around">
+                        <img
+                            src="../images/teamwork-work-svgrepo-com.svg"
+                            alt=""
+                            class="mr-2"
+                        />
+                        <h5 class="w-min text-3xl font-semibold text-white">
+                            Team Management
+                        </h5>
+                    </div>
+                    <div
+                        class="text-lg font-semibold before:text-white before:content-['<p>']"
+                    ></div>
+                    <div class="flex h-[100px] p-2">
+                        <div class="mr-2 w-0.5 bg-white"></div>
+                        <p class="font-semibold text-white">
+                            Extensive experience in project/team leadership,
+                            ensuring punctual project completion
+                        </p>
+                    </div>
+                    <div
+                        class="mb-1 text-lg font-semibold after:text-white after:content-['<p>']"
+                    ></div>
+                </div>
+            </section>
+        </article>
+        <article
+            id="projects"
+            class="flex flex-col gap-4 bg-zinc-950 px-5 pt-14 text-white"
+        >
+            <section
+                class="flex flex-col gap-3 min-[670px]:mx-auto min-[670px]:max-w-[502px]"
+            >
+                <h2 class="w-min text-6xl text-clampXXL font-bold">My Work</h2>
+                <p class="text-clampS font-bold">
+                    Deployed scalable logistics, cloud service and defence based
+                    (ADF) software using React, C# and C. Collaborated in 140+
+                    projects with 50+ clients all around the world. Bringing
+                    diverse array of skills/services to vast amount of
+                    industries.
+                </p>
+                <a
+                    href="#"
+                    class="w-44 rounded bg-purple-600 p-3 text-center font-semibold"
+                    >View Projects</a
+                >
+                <ul
+                    class="mb-10 flex flex-col text-xl font-semibold text-gray-400 min-[670px]:flex-row min-[670px]:gap-5"
+                >
+                    <li>Filter by</li>
+                    <li><span class="type text-purple-600">/ All</span></li>
+                    <li><span class="type">/ Apps</span></li>
+                    <li><span class="type">/ Web</span></li>
+                </ul>
+            </section>
+
+            <ul
+                id="projects"
+                class="hid2 mx-auto flex flex-col items-center gap-5 min-[750px]:grid min-[750px]:w-8/12 min-[750px]:grid-cols-2 [&>li]:w-10/12"
+            >
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <img
+                            src="../images/pexels-lynxexotics-5050535.jpg"
+                            class="max-w-full"
+                            alt=""
+                        />
+                        <h3 class="text-xl font-bold text-white">
+                            Lynx Exotics
+                        </h3>
+                        Web Development</a
+                    >
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <img
+                            src="../images/pexels-lynxexotics-5050535.jpg"
+                            class="max-w-full"
+                            alt=""
+                        />
+                        <h3 class="text-xl font-bold text-white">
+                            Lynx Exotics
+                        </h3>
+                        Web Development</a
+                    >
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <img
+                            src="../images/pexels-lynxexotics-5050535.jpg"
+                            class="max-w-full"
+                            alt=""
+                        />
+                        <h3 class="text-xl font-bold text-white">
+                            Lynx Exotics
+                        </h3>
+                        Web Development</a
+                    >
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <img
+                            src="../images/pexels-lynxexotics-5050535.jpg"
+                            class="max-w-full"
+                            alt=""
+                        />
+                        <h3 class="text-xl font-bold text-white">
+                            Lynx Exotics
+                        </h3>
+                        Web Development</a
+                    >
+                </li>
+            </ul>
+        </article>
+        <article
+            id="professional-experience"
+            class="bg-zinc-950 px-5 pb-14 pt-10 text-white"
+        >
+            <h2 class="text-wrap text-center text-3xl font-bold">
+                Professional Experience
+            </h2>
+            <div
+                id="expList"
+                class="mx-auto mt-5 flex max-w-[730px] flex-col items-center gap-1 [&_*]:hover:cursor-pointer"
+            >
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text-2xl">Software Engineer @ ADF</span>
+                    <div class="] self-center">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center p-2"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp"
+                    class="adf w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <img src="../images/ADF.svg" alt="" class="max-w-28" />
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-inbox"></i>
+                        Kilian.Tavares@ADF.com.gov
+                    </p>
+
+                    <p class="mt-2">
+                        Development and maintenance of both new and legacy
+                        interfaces in support to the ADF, From UI to Machinery
+                    </p>
+                    <ul
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>React</li>
+                        <li>Ruby</li>
+                        <li>Dart</li>
+                        <li>C</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text text-2xl"
+                        >Fullstack Developer @ Firebase</span
+                    >
+                    <div class="w-7 rounded-full">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp2"
+                    class="firebase [&_p]: h-[0px] w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <img
+                        src="../images/firebase.png"
+                        alt=""
+                        class="max-h-28 max-w-28"
+                    />
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-inbox"></i>
+                        Kilian.Tavares@Firebase.com.au
+                    </p>
+
+                    <p class="mt-2">
+                        Developing front and backend interfaces and databases in
+                        order to provide seemless user experience for customers.
+                    </p>
+                    <ul
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>React</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div
+                    class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
+                >
+                    <span class="text text-2xl"
+                        >Junior Fullstack Developer @ Investor Haven</span
+                    >
+                    <div class="w-7 rounded-full">
+                        <i
+                            class="fa-thin fa-plus fa-lg self-center"
+                            style="color: #ffffff"
+                        ></i>
+                    </div>
+                </div>
+                <div
+                    onclick="dropExp3"
+                    class="investor-haven [&_p]: h-[0px] w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                >
+                    <img src="../images/ADF.png" alt="" class="max-w-32" />
+
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-map-location-dot"></i> Sydney,
+                        Australia
+                    </p>
+                    <p class="text-gray-300">
+                        <i class="fa-solid fa-inbox"></i>
+                        Kilian.Tavares@Firebase.com.au
+                    </p>
+
+                    <p class="mt-2">
+                        Developing front and backend interfaces and databases in
+                        order to provide seemless user experience for customers.
+                    </p>
+                    <ul
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                    >
+                        <li>React</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article
+            id="art3"
+            class="flex flex-col min-[550px]:p-5 min-[750px]:flex-row min-[1030px]:hidden"
+        >
+            <div
+                class="flex flex-col gap-5 bg-purple-500 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row-reverse justify-between">
+                    <img
+                        src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                        alt="William Dasouza"
+                        class="max-w-20 self-end rounded-full"
+                    /><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        style="
+                            fill: rgba(199, 189, 189, 0.47);
+                            transform:;
+                            msfilter:;
+                        "
+                    >
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Since 2018 Kilian has been responsible for the development
+                    of our website which has been instrumental to the growth of
+                    our company. Even while working remotely he’s been highly
+                    responsive, organized and strategic in his thinking. In
+                    addition to staying on top of day-to-day site changes and
+                    builds, he’s provided us with great advice to stay on top of
+                    the current changes in web technologies. He’s also
+                    implemented effective project management and Q&A processes.
+                    As a result Kilian has been an highly valued and impactful
+                    member of our team.
+                </p>
+
+                <p>
+                    - Mark Steven
+                    <br />
+                    Floor Manager at ADF
+                </p>
+            </div>
+            <div
+                class="flex flex-col gap-5 bg-blue-500 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row justify-between">
+                    <img
+                        src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                        alt="William Dasouza"
+                        class="max-w-20 self-end rounded-full"
+                    /><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        style="
+                            fill: rgba(199, 189, 189, 0.47);
+                            transform:;
+                            msfilter:;
+                        "
+                    >
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Since 2018 Kilian has been responsible for the development
+                    of our website which has been instrumental to the growth of
+                    our company. Even while working remotely he’s been highly
+                    responsive, organized and strategic in his thinking. In
+                    addition to staying on top of day-to-day site changes and
+                    builds, he’s provided us with great advice to stay on top of
+                    the current changes in web technologies. He’s also
+                    implemented effective project management and Q&A processes.
+                    As a result Kilian has been an highly valued and impactful
+                    member of our team.
+                </p>
+
+                <p>
+                    - Wilfried Hajek
+                    <br />
+                    Project Manager @ Firebase
+                </p>
+            </div>
+            <div
+                class="flex flex-col gap-5 bg-purple-700 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
+            >
+                <div class="flex flex-row-reverse justify-between">
+                    <img
+                        src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                        alt="William Dasouza"
+                        class="max-w-20 self-end rounded-full"
+                    /><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="84"
+                        height="84"
+                        viewBox="0 0 24 24"
+                        style="
+                            fill: rgba(199, 189, 189, 0.47);
+                            transform:;
+                            msfilter:;
+                        "
+                    >
+                        <path
+                            d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                        ></path>
+                    </svg>
+                </div>
+                <p class="self-center font-semibold">
+                    Since 2018 Kilian has been responsible for the development
+                    of our website which has been instrumental to the growth of
+                    our company. Even while working remotely he’s been highly
+                    responsive, organized and strategic in his thinking. In
+                    addition to staying on top of day-to-day site changes and
+                    builds, he’s provided us with great advice to stay on top of
+                    the current changes in web technologies. He’s also
+                    implemented effective project management and Q&A processes.
+                    As a result Kilian has been an highly valued and impactful
+                    member of our team.
+                </p>
+
+                <p>
+                    - Mark Steven
+                    <br />
+                    CEO @ Invest Haven
+                </p>
+            </div>
+        </article>
+        <footer
+            class="flex flex-col gap-5 bg-gray-900 p-5 text-center min-[1030px]:flex-row"
+        >
+            <div
+                class="flex flex-col items-center justify-evenly min-[1030px]:w-1/2 [&>*]:w-3/5"
+            >
+                <p class="p-3 text-3xl text-white">
+                    Available to take on additional freelance clients and job
+                    opportunities
+                </p>
+                <p class="p-3 text-2xl text-white">
+                    Have an exciting project you need help with? Send me an
+                    email or contact me via instant message!
+                </p>
+                <a href="#" class="text-xl text-white"
+                    >Kiliantavareswork@gmail.com</a
+                >
+                <ul class="p-3 text-xl text-white">
+                    <li><a href="#">LinkeddIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <article
+                id="art4"
+                class="hid3 grid w-1/2 grid-cols-2 grid-rows-2 p-5 max-[1030px]:hidden"
+            >
+                <div
+                    class="row-span-2 flex flex-col gap-5 bg-purple-500 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row-reverse justify-between">
+                        <img
+                            src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                            alt="William Dasouza"
+                            class="max-w-20 self-end rounded-full"
+                        /><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Since 2018 Kilian has been responsible for the
+                        development of our website which has been instrumental
+                        to the growth of our company. Even while working
+                        remotely he’s been highly responsive, organized and
+                        strategic in his thinking. In addition to staying on top
+                        of day-to-day site changes and builds, he’s provided us
+                        with great advice to stay on top of the current changes
+                        in web technologies. He’s also implemented effective
+                        project management and Q&A processes. As a result Kilian
+                        has been an highly valued and impactful member of our
+                        team.
+                    </p>
+
+                    <p>
+                        - Mark Steven
+                        <br />
+                        Floor Manager at ADF
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col gap-5 bg-blue-500 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row justify-between">
+                        <img
+                            src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                            alt="William Dasouza"
+                            class="max-w-20 self-end rounded-full"
+                        /><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Kilian is AMAZING! If you have any doubt about hiring
+                        him, ask me – I am really impressed by this guy!
+                    </p>
+
+                    <p>
+                        - Wilfried Hajek
+                        <br />
+                        Project Manager @ Firebase
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col gap-5 bg-purple-700 px-7 py-5 text-clampXS [&>*]:font-semibold [&>*]:text-white"
+                >
+                    <div class="flex flex-row-reverse justify-between">
+                        <img
+                            src="../images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
+                            alt="William Dasouza"
+                            class="max-w-20 self-end rounded-full"
+                        /><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="84"
+                            height="84"
+                            viewBox="0 0 24 24"
+                            style="
+                                fill: rgba(199, 189, 189, 0.47);
+                                transform:;
+                                msfilter:;
+                            "
+                        >
+                            <path
+                                d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <p class="self-center font-semibold">
+                        Kilian is one of the best professionals that we have
+                        known in web development skills. Between his skills you
+                        can find good communication and accuracy with the
+                        planning in complex projects.
+                    </p>
+
+                    <p>
+                        - Mark Steven
+                        <br />
+                        CEO @ Invest Haven
+                    </p>
+                </div>
+            </article>
+        </footer>
+        <script src="./js/portfolio.js"></script>
+    </body>
 </html>
