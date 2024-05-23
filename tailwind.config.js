@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/*.{html,js}"],
   theme: {
-    extend: {},
-    plugins: [],
+    extend: {
+      backgroundImage: {
+        "page-1-left": "url(assets/images/bg-sidebar-desktop.svg)",
+      },
+    },
   },
+  plugins: [],
 };
