@@ -2,7 +2,7 @@ let sidebar = document.querySelector("#sideBar")
 let sideBarLinks = document.querySelector("#nav-links")
 let sideBarFooter = document.querySelector("#nav-footer")
 let art1Btn = document.querySelector("#art1-btn")
-
+let animationContainer = document.querySelector("#kLogo")
 // Open and close sidebar
 let openNav = document
     .querySelector("#menuBtn")
@@ -12,6 +12,7 @@ let openNav = document
             sideBarLinks.style.display = "inline-flex"
             sideBarFooter.style.display = "inline-block"
             art1Btn.style.display = "none"
+            animationContainer.style.display = "none"
         }
     })
 let closeNav = document
@@ -21,6 +22,7 @@ let closeNav = document
         sideBarLinks.style.display = "none"
         sideBarFooter.style.display = "none"
         art1Btn.style.display = "inline-block"
+        animationContainer.style.display = "Block"
     })
 
 // Experience btns
