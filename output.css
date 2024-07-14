@@ -635,6 +635,14 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -649,6 +657,14 @@ video {
 
 .hidden {
   display: none;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .h-\[0px\] {
@@ -669,6 +685,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[483px\] {
+  height: 483px;
 }
 
 .w-0 {
@@ -788,6 +808,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -798,6 +822,22 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-\[12px\] {
+  gap: 12px;
+}
+
+.gap-\[8px\] {
+  gap: 8px;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
 }
 
 .self-end {
@@ -883,8 +923,8 @@ video {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/raghav-verma-VISZBcAB6U8-unsplash\.jpg\'\)\] {
-  background-image: url('../images/raghav-verma-VISZBcAB6U8-unsplash.jpg');
+.bg-\[url\(images\/\'raghav-verma-VISZBcAB6U8-unsplash\.jpg\'\)\] {
+  background-image: url(images/'raghav-verma-VISZBcAB6U8-unsplash.jpg');
 }
 
 .bg-cover {
@@ -950,6 +990,14 @@ video {
   padding-top: 1.25rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1004,12 +1052,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-black {
@@ -1054,6 +1116,10 @@ video {
 
 .duration-75 {
   transition-duration: 75ms;
+}
+
+#introductory-Content {
+  background-image: url("images/raghav-verma-VISZBcAB6U8-unsplash.jpg");
 }
 
 .expBlock {
@@ -1158,11 +1224,6 @@ video {
 
 .before\:content-\[\'03\'\]::before {
   --tw-content: '03';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'04\'\]::before {
-  --tw-content: '04';
   content: var(--tw-content);
 }
 
@@ -1305,6 +1366,10 @@ video {
 
 .\[\&_li\]\:p-2 li {
   padding: 0.5rem;
+}
+
+.\[\&_p\]\:h-\[0px\] p {
+  height: 0px;
 }
 
 .\[\&_p\]\:font-semibold p {

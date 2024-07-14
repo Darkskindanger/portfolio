@@ -45,11 +45,6 @@
                     >
                         <a href="#projects">// Projects</a>
                     </li>
-                    <li
-                        class="relative before:absolute before:-top-2 before:right-0 before:text-sm before:text-white before:content-['04'] hover:underline active:underline"
-                    >
-                        <a href="#">// Contact</a>
-                    </li>
                 </ul>
                 <div
                     id="sideBar"
@@ -64,18 +59,20 @@
                     </button>
                     <ul
                         id="nav-links"
-                        class="nav-btns ml-10 mt-20 hidden flex-col gap-10 font-semibold text-black hover:cursor-pointer"
+                        class="nav-btns ml-10 mt-20 hidden flex-col gap-14 font-semibold text-black hover:cursor-pointer"
                     >
                         <li class="active:underline"><a href="#">Home</a></li>
-                        <li class="active:underline"><a href="#">About</a></li>
                         <li class="active:underline">
-                            <a href="#">Projects</a>
+                            <a href="#art-2">About</a>
                         </li>
                         <li class="active:underline">
-                            <a href="#">Contact</a>
+                            <a href="#projects">Projects</a>
                         </li>
                     </ul>
-                    <p id="nav-footer" class="ml-5 mt-7 hidden text-black">
+                    <p
+                        id="nav-footer"
+                        class="ml-5 mt-9 hidden font-semibold text-black"
+                    >
                         &copy;2024 Created by Kilian Tavares
                     </p>
                 </div>
@@ -182,8 +179,8 @@
                     <div class="flex h-[100px] p-2">
                         <div class="mr-2 w-0.5 bg-white"></div>
                         <p class="font-semibold text-white">
-                            Experienced in both functional and OOP: Dart,
-                            Python, Java, JavaScript, TypeScript.
+                            Currently learning in depth PHP and MySql, Alognside
+                            acquiring Azure Administration certification
                         </p>
                     </div>
                     <div
@@ -252,17 +249,29 @@
                 <li class="showDelay2 rounded-lg bg-zinc-900">
                     <a href="#" class="font-bold text-zinc-400">
                         <img
-                            src="images/pexels-lynxexotics-5050535.jpg"
+                            src="project-collages/MixCollage-14-Jul-2024-07-55-PM-8846.jpg"
+                            class="aspect-square max-w-full"
+                            alt=""
+                        />
+                        <h3 class="text-xl font-bold text-white">Screenplay</h3>
+                        Movie Database - IMDB API integration, Full
+                        functionality; filter/sort/search of media.
+                    </a>
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <img
+                            src="project-collages/MixCollage-14-Jul-2024-08-12-PM-451.jpg"
                             class="max-w-full"
                             alt=""
                         />
                         <h3 class="text-xl font-bold text-white">
-                            Lynx Exotics
+                            Adel Property
                         </h3>
-                        Web Development</a
-                    >
+                        Real estate website/platform -
+                    </a>
                 </li>
-                <li class="showDelay2 rounded-lg bg-zinc-900">
+                <!-- <li class="showDelay2 rounded-lg bg-zinc-900">
                     <a href="#" class="font-bold text-zinc-400">
                         <img
                             src="images/pexels-lynxexotics-5050535.jpg"
@@ -287,20 +296,7 @@
                         </h3>
                         Web Development</a
                     >
-                </li>
-                <li class="showDelay2 rounded-lg bg-zinc-900">
-                    <a href="#" class="font-bold text-zinc-400">
-                        <img
-                            src="images/pexels-lynxexotics-5050535.jpg"
-                            class="max-w-full"
-                            alt=""
-                        />
-                        <h3 class="text-xl font-bold text-white">
-                            Lynx Exotics
-                        </h3>
-                        Web Development</a
-                    >
-                </li>
+                </li> -->
             </ul>
         </article>
         <article
@@ -381,7 +377,7 @@
                 </div>
                 <div
                     onclick="dropExp2"
-                    class="firebase [&_p]: h-[0px] w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
+                    class="firebase w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
                 >
                     <img
                         src="images/letter-w-svgrepo-com.svg"
@@ -403,7 +399,7 @@
                         order to provide seemless user experience for customers.
                     </p>
                     <ul
-                        class="jobLang mt-4 inline-flex flex-wrap gap-4 [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                        class="jobLang mt-4 inline-flex flex-wrap gap-[5px] text-sm font-semibold [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
                     >
                         <li>Concise and detailed assistance for Job seekers</li>
                         <li>Liasing with employees and employers</li>
@@ -448,7 +444,7 @@
                         order to provide seemless user experience for customers.
                     </p>
                     <ul
-                        class="jobLang mt-4 inline-flex flex-wrap gap-4 [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
+                        class="jobLang mt-4 inline-flex flex-wrap gap-4 font-semibold [&_li]:rounded-full [&_li]:bg-purple-950 [&_li]:p-2"
                     >
                         <li>HTML/CSS/Tailwind</li>
                         <li>Javascript</li>
@@ -500,9 +496,9 @@
                 </p>
 
                 <p>
-                    - Mark Steven
+                    - Adel Nour @ Adel Property
                     <br />
-                    Floor Manager at ADF
+                    CEO at Adel Property
                 </p>
             </div>
             <div
@@ -530,22 +526,14 @@
                     </svg>
                 </div>
                 <p class="self-center font-semibold">
-                    Since 2018 Kilian has been responsible for the development
-                    of our website which has been instrumental to the growth of
-                    our company. Even while working remotely he’s been highly
-                    responsive, organized and strategic in his thinking. In
-                    addition to staying on top of day-to-day site changes and
-                    builds, he’s provided us with great advice to stay on top of
-                    the current changes in web technologies. He’s also
-                    implemented effective project management and Q&A processes.
-                    As a result Kilian has been an highly valued and impactful
-                    member of our team.
+                    Kilian is AMAZING! If you have any doubt about hiring him,
+                    ask me – I am really impressed by this guy!
                 </p>
 
                 <p>
-                    - Wilfried Hajek
+                    - Bec Carter
                     <br />
-                    Project Manager @ Firebase
+                    Manager @ Wise Employment
                 </p>
             </div>
             <div
@@ -573,22 +561,16 @@
                     </svg>
                 </div>
                 <p class="self-center font-semibold">
-                    Since 2018 Kilian has been responsible for the development
-                    of our website which has been instrumental to the growth of
-                    our company. Even while working remotely he’s been highly
-                    responsive, organized and strategic in his thinking. In
-                    addition to staying on top of day-to-day site changes and
-                    builds, he’s provided us with great advice to stay on top of
-                    the current changes in web technologies. He’s also
-                    implemented effective project management and Q&A processes.
-                    As a result Kilian has been an highly valued and impactful
-                    member of our team.
+                    Kilian is one of the best professionals that we have known
+                    in web development skills. Between his skills you can find
+                    good communication and accuracy with the planning in complex
+                    projects.
                 </p>
 
                 <p>
-                    - Mark Steven
+                    - Cooper Staines
                     <br />
-                    CEO @ Invest Haven
+                    Floor Manager @ Investor Haven
                 </p>
             </div>
         </article>
@@ -694,9 +676,9 @@
                     </p>
 
                     <p>
-                        - Wilfried Hajek
+                        - Bec Carter
                         <br />
-                        Project Manager @ Firebase
+                        Manager @ Wise Employment
                     </p>
                 </div>
                 <div
@@ -731,9 +713,9 @@
                     </p>
 
                     <p>
-                        - Mark Steven
+                        - Cooper Staines
                         <br />
-                        CEO @ Invest Haven
+                        Floor Manager @ Investor Haven
                     </p>
                 </div>
             </article>
