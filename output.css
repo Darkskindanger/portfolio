@@ -639,6 +639,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1053,6 +1057,10 @@ video {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1412,6 +1420,14 @@ video {
   align-self: stretch;
 }
 
+.\[\&\>li\]\:p-1>li {
+  padding: 0.25rem;
+}
+
+.\[\&\>span\]\:font-semibold>span {
+  font-weight: 600;
+}
+
 .\[\&\>span\]\:text-green-400>span {
   --tw-text-opacity: 1;
   color: rgb(74 222 128 / var(--tw-text-opacity));
@@ -1435,6 +1451,10 @@ video {
 }
 
 .\[\&_p\]\:font-semibold p {
+  font-weight: 600;
+}
+
+.\[\&_span\]\:font-semibold span {
   font-weight: 600;
 }
 
