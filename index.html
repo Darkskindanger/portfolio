@@ -150,12 +150,14 @@
                     <div
                         class="text-lg font-semibold before:text-white before:content-['<p>']"
                     ></div>
-                    <div class="flex h-[101px] p-2">
+                    <div class="flex h-[101px] p-1">
                         <div class="mr-2 w-0.5 bg-white"></div>
-                        <p class="font-semibold text-white">
+                        <p
+                            class="font-semibold text-white [&>span]:text-green-400"
+                        >
                             Deep love for deploying web apps and websites.
-                            Currently offering freelance services to clients,
-                            while also
+                            <span>HTML, CSS, REACT</span>
+                            and <span>Svelte</span> use.
                         </p>
                     </div>
                     <div
@@ -176,11 +178,16 @@
                     <div
                         class="text-lg font-semibold before:text-white before:content-['<p>']"
                     ></div>
-                    <div class="flex h-[100px] p-2">
+                    <div class="flex h-[100px] p-1">
                         <div class="mr-2 w-0.5 bg-white"></div>
-                        <p class="font-semibold text-white">
-                            Currently learning in depth PHP and MySql, Alognside
-                            acquiring Azure Administration certification
+                        <p
+                            class="font-semibold text-white [&>span]:text-green-400"
+                        >
+                            <span>NextJS</span> and <span>PHP</span> experience,
+                            <span>Backend API</span> and Database
+                            <span>construction.</span>
+                            <span>Azure</span>
+                            implementation.
                         </p>
                     </div>
                     <div
@@ -227,32 +234,15 @@
                     love with building/maintaining various projects from
                     freelancing to personal projects.
                 </p>
-                <a
-                    href="#"
-                    class="w-44 rounded bg-purple-600 p-3 text-center font-semibold"
-                    >View Projects</a
-                >
-                <ul
-                    class="mb-10 flex flex-col text-xl font-semibold text-gray-400 min-[670px]:flex-row min-[670px]:gap-5"
-                >
-                    <li>Filter by</li>
-                    <li><span class="type text-purple-600">/ All</span></li>
-                    <li><span class="type">/ Apps</span></li>
-                    <li><span class="type">/ Web</span></li>
-                </ul>
             </section>
 
             <ul
                 id="projects"
-                class="hid2 mx-auto flex flex-col items-center gap-5 min-[750px]:grid min-[750px]:w-8/12 min-[750px]:grid-cols-2 [&>li]:w-10/12"
+                class="hid2 mx-auto flex w-11/12 items-center justify-center gap-5 [&>li]:max-w-[600px] [&>li]:min-[] [&>li]:self-stretch flex-wrap"
             >
                 <li class="showDelay2 rounded-lg bg-zinc-900">
                     <a href="#" class="font-bold text-zinc-400">
-                        <img
-                            src="project-collages/MixCollage-14-Jul-2024-07-55-PM-8846.jpg"
-                            class="aspect-square max-w-full"
-                            alt=""
-                        />
+                        <picture><source srcset="project-collages/cryptoCollageDesktop.png" media="(min-width: 600px)"> <img src="project-collages/cryptoCollage.png" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
                         <h3 class="text-xl font-bold text-white">Screenplay</h3>
                         Movie Database - IMDB API integration, Full
                         functionality; filter/sort/search of media.
@@ -260,11 +250,25 @@
                 </li>
                 <li class="showDelay2 rounded-lg bg-zinc-900">
                     <a href="#" class="font-bold text-zinc-400">
-                        <img
-                            src="project-collages/MixCollage-14-Jul-2024-08-12-PM-451.jpg"
-                            class="max-w-full"
-                            alt=""
-                        />
+                        <picture><source srcset="project-collages/OCCollageDesktop.png" media="(min-width: 600px)"> <img src="project-collages/OCCollage.png" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
+                        <h3 class="text-xl font-bold text-white">
+                            Adel Property
+                        </h3>
+                        Real estate website/platform -
+                    </a>
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <picture><source srcset="/project-collages/IHCollageDesktop.png" media="(min-width: 600px)"> <img src="/project-collages/IHCollage.png" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
+                        <h3 class="text-xl font-bold text-white">
+                            Adel Property
+                        </h3>
+                        Real estate website/platform -
+                    </a>
+                </li>
+                <li class="showDelay2 rounded-lg bg-zinc-900">
+                    <a href="#" class="font-bold text-zinc-400">
+                        <picture><source srcset="/project-collages/sitelineCollageDesktop.png" media="(min-width: 600px)"> <img src="/project-collages/sitelineCollage.png" alt="Oasis Carpentry" height=“400” width=“600” loading=“lazy” decoding=“async”> </picture>
                         <h3 class="text-xl font-bold text-white">
                             Adel Property
                         </h3>
@@ -366,7 +370,7 @@
                     class="expBtn inline-flex w-11/12 items-center justify-between gap-3 rounded bg-purple-600 p-2 text-center"
                 >
                     <span class="text text text-2xl"
-                        >Customer Service Agent @ Wise Employment</span
+                        >Customer Service Agent @ DHL</span
                     >
                     <div class="w-7 rounded-full">
                         <i
@@ -379,11 +383,7 @@
                     onclick="dropExp2"
                     class="firebase w-11/12 rounded bg-purple-400 p-0 duration-200 [&>*]:hidden [&_p]:font-semibold"
                 >
-                    <img
-                        src="images/letter-w-svgrepo-com.svg"
-                        alt=""
-                        class="mb-5 max-w-20"
-                    />
+                    <img src="images/dhl-3.svg" alt="" class="mb-5 max-w-20" />
 
                     <p class="text-gray-300">
                         <i class="fa-solid fa-map-location-dot"></i> Sydney,
@@ -462,28 +462,14 @@
                 class="flex flex-col gap-5 bg-purple-500 px-7 py-5 [&>*]:font-semibold [&>*]:text-white"
             >
                 <div class="flex flex-row-reverse justify-between">
-                    <img
-                        src="images/willian-souza-p5BoBF0XJUA-unsplash.jpg"
-                        alt="William Dasouza"
-                        class="max-w-20 self-end rounded-full"
-                    /><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="84"
-                        height="84"
-                        viewBox="0 0 24 24"
-                        style="
-                            fill: rgba(199, 189, 189, 0.47);
-                            transform:;
-                            msfilter:;
-                        "
-                    >
+                    
                         <path
                             d="m21.95 8.721-.025-.168-.026.006A4.5 4.5 0 1 0 17.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222-.474.197.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.028 7.028 0 0 0-.063-.539zm-11 0-.025-.168-.026.006A4.5 4.5 0 1 0 6.5 14c.223 0 .437-.034.65-.065-.069.232-.14.468-.254.68-.114.308-.292.575-.469.844-.148.291-.409.488-.601.737-.201.242-.475.403-.692.604-.213.21-.492.315-.714.463-.232.133-.434.28-.65.35l-.539.222c-.301.123-.473.195-.473.195l.484 1.939.597-.144c.191-.048.424-.104.689-.171.271-.05.56-.187.882-.312.317-.143.686-.238 1.028-.467.344-.218.741-.4 1.091-.692.339-.301.748-.562 1.05-.944.33-.358.656-.734.909-1.162.293-.408.492-.856.702-1.299.19-.443.343-.896.468-1.336.237-.882.343-1.72.384-2.437.034-.718.014-1.315-.028-1.747a7.571 7.571 0 0 0-.064-.537z"
                         ></path>
                     </svg>
                 </div>
                 <p class="self-center font-semibold">
-                    Since 2018 Kilian has been responsible for the development
+                    Since 2023 Kilian has been responsible for the development
                     of our website which has been instrumental to the growth of
                     our company. Even while working remotely he’s been highly
                     responsive, organized and strategic in his thinking. In
@@ -496,9 +482,9 @@
                 </p>
 
                 <p>
-                    - Adel Nour @ Adel Property
+                    - Adel Nour @ Investor Haven
                     <br />
-                    CEO at Adel Property
+                    CEO at Investor Haven
                 </p>
             </div>
             <div
@@ -531,9 +517,9 @@
                 </p>
 
                 <p>
-                    - Bec Carter
+                    - Rochelle Carter
                     <br />
-                    Manager @ Wise Employment
+                    Manager @ DHL
                 </p>
             </div>
             <div
@@ -568,7 +554,7 @@
                 </p>
 
                 <p>
-                    - Cooper Staines
+                    - Adel Nour
                     <br />
                     Floor Manager @ Investor Haven
                 </p>
@@ -586,17 +572,17 @@
                 </p>
                 <p class="p-3 text-xl text-white">
                     Have an exciting project you need help with? Send me an
-                    email or contact me via instant message!
+                    email
                 </p>
                 <a href="#" class="text-xl text-white"
                     >Kiliantavareswork@gmail.com</a
                 >
-                <ul class="p-3 text-xl text-white">
+                <!-- <ul class="p-3 text-xl text-white">
                     <li><a href="#">LinkeddIn</a></li>
                     <li><a href="#">GitHub</a></li>
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">Twitter</a></li>
-                </ul>
+                </ul> -->
             </div>
             <article
                 id="art4"
@@ -676,9 +662,9 @@
                     </p>
 
                     <p>
-                        - Bec Carter
+                        - Rochelle Carter
                         <br />
-                        Manager @ Wise Employment
+                        Manager @ DHL
                     </p>
                 </div>
                 <div
@@ -713,7 +699,7 @@
                     </p>
 
                     <p>
-                        - Cooper Staines
+                        - Adel Nour
                         <br />
                         Floor Manager @ Investor Haven
                     </p>
