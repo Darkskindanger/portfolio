@@ -29,14 +29,14 @@ let closeNav = document
 let expBtns = document.querySelectorAll(".expBtn")
 
 let adfBox = document.querySelector(".adf")
-let firebaseBox = document.querySelector(".firebase")
+let dhlBox = document.querySelector(".dhl")
 let investorHaven = document.querySelector(".investor-haven")
 
-let firebaseChildren = firebaseBox.querySelectorAll("*")
+let dhlChildren = dhlBox.querySelectorAll("*")
 let investorHavenChildren = investorHaven.querySelectorAll("*")
 let adfBoxChildren = adfBox.querySelectorAll("*")
 console.log(adfBoxChildren)
-console.log(firebaseChildren)
+console.log(dhlChildren)
 
 let dropExp = expBtns[0].addEventListener("click", () => {
     adfBox.classList.toggle("hidden" && "expBlock")
@@ -53,17 +53,17 @@ let dropExp = expBtns[0].addEventListener("click", () => {
     }
 })
 let dropExp2 = expBtns[1].addEventListener("click", () => {
-    firebaseBox.classList.toggle("hidden" && "expBlock")
+    dhlBox.classList.toggle("hidden" && "expBlock")
     // if (adfBox.style.display != "hidden") {
     //     adfBox.style.height = "430px"
     //     adfBox.style.padding = "20px"
     //     adfBox.style.display = "inline-block"
     // }
-    if (firebaseBox.classList.contains !== "hidden") {
+    if (dhlBox.classList.contains !== "hidden") {
         // Object.keys(adfBoxChildren).forEach((key) => {
         //     adfBoxChildren[key].style.display = "inline-block"
         // })
-        firebaseBox.classList.toggle("[&>*]:hidden")
+        dhlBox.classList.toggle("[&>*]:hidden")
     }
 })
 let dropExp3 = expBtns[2].addEventListener("click", () => {

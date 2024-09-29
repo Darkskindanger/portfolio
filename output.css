@@ -582,10 +582,6 @@ video {
   grid-row: span 2 / span 2;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -595,8 +591,8 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-5 {
@@ -639,10 +635,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -661,10 +653,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
 }
 
 .h-\[0px\] {
@@ -707,10 +695,6 @@ video {
   width: 91.666667%;
 }
 
-.w-44 {
-  width: 11rem;
-}
-
 .w-7 {
   width: 1.75rem;
 }
@@ -732,18 +716,6 @@ video {
   width: min-content;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
 .max-w-20 {
   max-width: 5rem;
 }
@@ -754,10 +726,6 @@ video {
 
 .max-w-\[730px\] {
   max-width: 730px;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .transform {
@@ -834,10 +802,6 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .self-center {
@@ -937,10 +901,6 @@ video {
 
 .p-0 {
   padding: 0px;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-2 {
@@ -1057,10 +1017,6 @@ video {
   font-weight: 600;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1071,29 +1027,9 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-green-400 {
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
-}
-
-.text-purple-600 {
-  --tw-text-opacity: 1;
-  color: rgb(147 51 234 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-zinc-400 {
-  --tw-text-opacity: 1;
-  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .shadow-\[0px_-95px_20px_100px_\#00000024\] {
@@ -1115,7 +1051,7 @@ video {
 }
 
 .expBlock {
-  height: 430px;
+  height: 450px;
   padding: 20px;
   display: inline-block;
 }
@@ -1284,29 +1220,9 @@ video {
   .min-\[670px\]\:max-w-\[502px\] {
     max-width: 502px;
   }
-
-  .min-\[670px\]\:flex-row {
-    flex-direction: row;
-  }
-
-  .min-\[670px\]\:gap-5 {
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 750px) {
-  .min-\[750px\]\:grid {
-    display: grid;
-  }
-
-  .min-\[750px\]\:w-8\/12 {
-    width: 66.666667%;
-  }
-
-  .min-\[750px\]\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .min-\[750px\]\:flex-row {
     flex-direction: row;
   }
@@ -1339,81 +1255,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.\[\&\>li\]\:w-10\/12>li {
-  width: 83.333333%;
-}
-
-.\[\&\>li\]\:w-\[\]>li {
-  width: ;
-}
-
-.\[\&\>li\]\:w-\[200px\]>li {
-  width: 200px;
-}
-
-.\[\&\>li\]\:w-\[400px\]>li {
-  width: 400px;
-}
-
-.\[\&\>li\]\:w-\[500px\]>li {
-  width: 500px;
-}
-
-.\[\&\>li\]\:w-\[450px\]>li {
-  width: 450px;
-}
-
-.\[\&\>li\]\:w-max>li {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.\[\&\>li\]\:min-w-\[476px\]>li {
-  min-width: 476px;
-}
-
-.\[\&\>li\]\:min-w-\[4552px\]>li {
-  min-width: 4552px;
-}
-
-.\[\&\>li\]\:min-w-\[552px\]>li {
-  min-width: 552px;
-}
-
-.\[\&\>li\]\:max-w-\[\]>li {
-  max-width: ;
-}
-
-.\[\&\>li\]\:max-w-\[450px\]>li {
-  max-width: 450px;
-}
-
-.\[\&\>li\]\:max-w-\[550px\]>li {
-  max-width: 550px;
-}
-
-.\[\&\>li\]\:max-w-\[850px\]>li {
-  max-width: 850px;
-}
-
-.\[\&\>li\]\:max-w-\[800px\]>li {
-  max-width: 800px;
-}
-
 .\[\&\>li\]\:max-w-\[600px\]>li {
   max-width: 600px;
-}
-
-.\[\&\>li\]\:flex-grow>li {
-  flex-grow: 1;
-}
-
-.\[\&\>li\]\:items-stretch>li {
-  align-items: stretch;
-}
-
-.\[\&\>li\]\:justify-stretch>li {
-  justify-content: stretch;
 }
 
 .\[\&\>li\]\:self-stretch>li {
@@ -1422,10 +1265,6 @@ video {
 
 .\[\&\>li\]\:p-1>li {
   padding: 0.25rem;
-}
-
-.\[\&\>span\]\:font-semibold>span {
-  font-weight: 600;
 }
 
 .\[\&\>span\]\:text-green-400>span {
@@ -1456,9 +1295,4 @@ video {
 
 .\[\&_span\]\:font-semibold span {
   font-weight: 600;
-}
-
-.\[\&_span\]\:text-green-400 span {
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
